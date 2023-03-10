@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--font-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Syne&display=swap" rel="stylesheet">
+        <!--icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!--Main style-->
+        <title> Add New Product Form</title>
+        <link rel="stylesheet" href="forms.css">
+    </head>
+
+           <!-- example icon 
+    <i data-feather="star"></i>
+
+    <script>
+      feather.replace()
+    </script>-->
+    
+    <body>
+
+      <div class="grid-container">
+        <!--Header Starts-->
+        <header class="header">
+         <div class="menu-icon" onclick="opensidebar">
+           <span class="material-icons-outlined" ><i class='bx bx-menu'></i> Menu</span>
+         </div>
+         <div class="header-left">
+           <span class="material-icons-outlined"  ><i class='bx bx-search-alt-2'></i> </span>
+         </div>
+         <div class="header-right">
+           <span class="material-icons-outlined"  ><i class='bx bx-bell'></i> </span>
+           <span class="material-icons-outlined"  ><i class='bx bx-cog'></i> </span>
+           <span class="material-icons-outlined"  ><i class='bx bx-user-circle'></i> </span>
+
+         </div>
+        </header>
+        <!--Header Endss-->
+
+        <!--Side Bar Starts-->
+        <aside id="sidebar">
+         <div class="sidebar-title">
+           <div class="sidebar-brand">
+             <img src="LOGO.png">
+           </div>
+           <span class="material-icons-outlined" onclick="closesidebar" ><i class='bx bx-x'></i> close </span>
+         </div>
+         <ol class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="Dashboard.html" ><span class="material-icons-outlined"><i class='bx bx-pie-chart-alt'></i></span>Dashboard</a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="Suppliers.html" ><span class="material-icons-outlined"><i class='bx bx-box'></i></span>Suppliers</a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="Customer.html" ><span class="material-icons-outlined"><i class='bx bx-user'></i></span>Customers</a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="Inventory.html" ><span class="material-icons-outlined"><i class='bx bx-basket'></i></span>Inventory</a>
+          </li>
+         
+          <li class="sidebar-list-item">
+            <a href="Report.html" ><span class="material-icons-outlined"><i class='bx bx-bar-chart-alt-2' ></i>  </span>Report</a>
+          </li>
+        </ol>
+        </aside>
+        <!--Side Bar Ends-->
+
+        <!--Main Starts-->
+        <main class="main-container">
+         
+
+      <div class="container">
+        <header>Add New Product</header>
+        <form action="#">
+          <div class="form first">
+            <div class=" New Product"> 
+              <div class="fields">
+                <div class="input-field">
+                  <label>Product Name</label>
+                  <input type="text" placeholder="Enter product name" required>
+                </div>
+
+                <div class="input-field">
+                  <label>SKU</label>
+                  <input type="number" placeholder="#001" >
+                </div>
+               
+                <div class="input-field">
+                  <label>Product Description</label>
+                  <input type="textarea" placeholder="Enter product description" >
+                </div>
+                  
+                  
+                <div class="input-field">
+                  <label>Currency</label>
+                  <input type="number" placeholder="NGN" required>
+                </div>
+                  
+                <div class="input-field">
+                  <label>Unit Price</label>
+                  <input type="number" placeholder="0.00" required>
+                </div>
+                  
+                <div class="input-field">
+                  <label>Stock on Hand</label>
+                  <input type="text" placeholder="Enter Qty of stock" required>
+                </div>
+                  
+                <div class="input-field">
+                  <label>Re Order Level</label>
+                  <input type="text" placeholder="Enter re order level" required>
+                </div>
+
+                <div class="input-field">
+                  <label>Expiry Date</label>
+                  <input type="date" placeholder="Enter expiry date" required>
+                </div>
+                  
+                  <div class="Notify">
+                  <input type="checkbox" placeholder="Enter expiry date" required >
+                  <label >Notify me <input type="number" placeholder="0" 
+                    style=" border:none; border-bottom:#8e8e8e .1rem solid; width:10rem" required>to the expiry date</label>
+                  
+                  </div>
+
+                  
+                  <div class="button">
+                     <a href="#" target="_"class="secbtn" > Cancel</a>
+                     <a href="#" target="_"class="btn" > Save </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        </div>
+        </main>
+      </div>
+
+        <script src="script.js"></script>
+    </body>

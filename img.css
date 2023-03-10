@@ -1,0 +1,58 @@
+.img-container{
+  
+    background-color: var(--whiteshade02);
+    border: var(--border);
+    border-color: var(--lightgrey);
+    max-width: 200px;
+    border-radius: 4px;
+
+}
+.img-area{
+    position:relative;
+    width:100%;
+    height: 100px;
+    margin-bottom: .8rem;
+    overflow: hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+
+<div class="input-field">
+<label>Product Description</label>
+<input type="text" placeholder="Enter product description" >
+</div>
+
+
+<div class="input-field">
+<label>Currency</label>
+<input type="number" placeholder="NGN" required>
+</div>
+
+<div class="input-field">
+<label>Unit Price</label>
+<input type="number" placeholder="0.00" required>
+</div>
+
+<div class="input-field">
+<label>Stock on Hand</label>
+<input type="text" placeholder="Enter Qty of stock" required>
+</div>
+
+<div class="input-field">
+<label>Stock on Hand</label>
+<input type="text" placeholder="Enter re order level" required>
+</div>
+<div class="input-field">
+<label>Stock on Hand</label>
+<input type="date" placeholder="Enter expiry date" required>
+</div>
+
+<div class="input-field">
+<input type="checkbox" placeholder="Enter expiry date" required>
+
+<label >Notify me <input type="days" placeholder="0" required>to the expiry date</label>
+
+
+</div>

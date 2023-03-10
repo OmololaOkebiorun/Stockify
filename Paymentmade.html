@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--font-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap" rel="stylesheet">
+        <!--icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!--Main style-->
+        <title> Payment Made</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="Inventory.css">
+    </head>
+
+    <body>
+        <div class="grid-container">
+             <!--Header Starts-->
+             <header class="header">
+              <div class="menu-icon" onclick="opensidebar">
+                <span class="material-icons-outlined" ><i class='bx bx-menu'></i> Menu</span>
+              </div>
+              <div class="header-left">
+                <span class="material-icons-outlined"  ><i class='bx bx-search-alt-2'></i> </span>
+              </div>
+              <div class="header-right">
+                <span class="material-icons-outlined"  ><i class='bx bx-bell'></i> </span>
+                <span class="material-icons-outlined"  ><i class='bx bx-cog'></i> </span>
+                <span class="material-icons-outlined"  ><i class='bx bx-user-circle'></i> </span>
+
+              </div>
+             </header>
+             <!--Header Endss-->
+
+             <!--Side Bar Starts-->
+             <aside id="sidebar">
+              <div class="sidebar-title">
+                <div class="sidebar-brand">
+                  <img src="LOGO.png">
+                </div>
+                <span class="material-icons-outlined" onclick="closesidebar" ><i class='bx bx-x'></i> close </span>
+              </div>
+              <ol class="sidebar-list">
+                <li class="sidebar-list-item">
+                  <a href="Dashboard.html" ><span class="material-icons-outlined"><i class='bx bx-pie-chart-alt'></i></span>Dashboard</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Supplier.html" ><span class="material-icons-outlined"><i class='bx bx-box'></i></span>Suppliers</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Customer.html" ><span class="material-icons-outlined"><i class='bx bx-user'></i></span>Customers</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Inventory.html" ><span class="material-icons-outlined"><i class='bx bx-basket'></i></span>Inventory</a>
+                </li>
+                
+                <li class="sidebar-list-item">
+                  <a href="Report.html" ><span class="material-icons-outlined"><i class='bx bx-bar-chart-alt-2' ></i>  </span>Report</a>
+                </li>
+              </ol>
+             </aside>
+             <!--Side Bar Ends-->
+
+             <!--Main Starts-->
+             <main class="main-container">
+              <div class="main-title">
+                <h2>Report</h2>
+              </div>
+            <div class="card-container">
+               <h4> Payment Received</h4>
+               <div class="card-items">
+                <div class="input-field">
+                    <label>From</label>
+                    <input type="date" placeholder="" required>
+                  </div>
+                <div class="input-field">
+                    <label>To</label>
+                    <input type="date" placeholder="" required>
+                  
+                </div>
+                <div class="input-field" id="dropdown">
+                    <label for="Customer">Filter</label>
+                <select class="drop" name="customer" id="customer">
+                    <option value="By Customer">Cash</option>
+                    <option value="By Customer">POS</option>
+                    <option value="By Customer">Bank</option>
+                    <option value="By Customer">Cheque</option>
+                </select>
+                </div>
+                <div><btn class="btn">Apply</btn> </div>
+               </div>
+            </div> 
+            <div class="card">
+                <div class="header-table">
+                    <div class="input-field" id="dropdown">
+                        <label for="Customer"></label>
+                    <select class="drop" name="customer" id="customer">
+                        <option value="By Customer">Share</option>
+                        <option value="By Customer">Whatsapp</option>
+                        <option value="By Customer">Mail</option>
+                        <option value="By Customer">DOwnload</option>
+                    </select>
+                    </div>
+                
+                </div>
+               <div class="stock-table-list" id="stock-table-list">
+                <table class="stock-table">
+                  <thead>
+                    <tr><th><span class="custom-checkbox"><input type="checkbox" id="selectAll"><label for="selectAll"></label></span></th>
+                    <th>Date</th>
+                    <th>Supplier Name</th>
+                    <th>Payment Mode</th>
+                    <th>Invoice</th>
+                    <th>Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                  <tr><th><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="option[]" value="1"><label for="checkbox1"></label></span></th>
+                      
+                      <th>23 Mar 2023</th>
+                      <th>Mimie</th>
+                      <th>Cash</th>
+                      <th>#0001</th>
+                      <th>₦10,000</th>
+                    </tr>
+
+                  <tr><th><span class="custom-checkbox"><input type="checkbox" id="checkbox2" name="option[]" value="2"><label for="checkbox1"></label></span></th>
+                      <th>24 Mar 2023</th>
+                      <th>Ricky</th>
+                      <th>Cash</th>
+                      <th>#0002</th>
+                      <th>₦10,000</th>
+                    
+                  </tr>
+                   
+                  <tr><th><span class="custom-checkbox"><input type="checkbox" id="checkbox3" name="option[]" value="3"><label for="checkbox1"></label></span></th>
+                    <th>24 Mar 2023</th>
+                    <th>Mimie</th>
+                    <th>Cash</th>
+                    <th>#0003</th>
+                    <th>₦10,000</th>
+                  </tr>
+
+                  <tr><th><span class="custom-checkbox"><input type="checkbox" id="checkbox4" name="option[]" value="4"><label for="checkbox1"></label></span></th>
+                      
+                    <th>Total</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>₦50,000</th>
+                  </tr>
+                   
+              </tbody>
+
+                
+                </table>
+               </div>
+              </div>
+             </main>
+             <!--Main Ends-->
+
+             
+
+
+
+        </div>
+       <!--Apex Charts-->
+       <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+    <script src="script.js"></script>
+    </body>

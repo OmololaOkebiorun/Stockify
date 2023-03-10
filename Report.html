@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--font-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap" rel="stylesheet">
+        <!--icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!--Main style-->
+        <title> Report</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="report.css">
+    </head>
+
+    <body>
+        <div class="grid-container">
+             <!--Header Starts-->
+             <header class="header">
+              <div class="menu-icon" onclick="opensidebar">
+                <span class="material-icons-outlined" ><i class='bx bx-menu'></i> Menu</span>
+              </div>
+              <div class="header-left">
+                <span class="material-icons-outlined"  ><i class='bx bx-search-alt-2'></i> </span>
+              </div>
+              <div class="header-right">
+                <span class="material-icons-outlined"  ><i class='bx bx-bell'></i> </span>
+                <span class="material-icons-outlined"  ><i class='bx bx-cog'></i> </span>
+                <span class="material-icons-outlined"  ><i class='bx bx-user-circle'></i> </span>
+
+        </div>
+             </header>
+             <!--Header Endss-->
+
+             <!--Side Bar Starts-->
+             <aside id="sidebar">
+              <div class="sidebar-title">
+                <div class="sidebar-brand">
+                  <img src="LOGO.png">
+                </div>
+                <span class="material-icons-outlined" onclick="closesidebar" ><i class='bx bx-x'></i> close </span>
+              </div>
+              <ol class="sidebar-list">
+                <li class="sidebar-list-item">
+                  <a href="Dashboard.html" ><span class="material-icons-outlined"><i class='bx bx-pie-chart-alt'></i></span>Dashboard</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Supplier.html" ><span class="material-icons-outlined"><i class='bx bx-box'></i></span>Suppliers</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Customer.html" ><span class="material-icons-outlined"><i class='bx bx-user'></i></span>Customers</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Inventory.html" ><span class="material-icons-outlined"><i class='bx bx-basket'></i></span>Inventory</a>
+                </li>
+                <li class="sidebar-list-item">
+                  <a href="Report.html" ><span class="material-icons-outlined"><i class='bx bx-bar-chart-alt-2' ></i>  </span>Report</a>
+                </li>
+              </ol>
+             </aside>
+             <!--Side Bar Ends-->
+
+             <!--Main Starts-->
+             <main class="main-container">
+                <div class="main-title">
+                    <h2>Report</h2>
+                </div>
+                
+                <div class="list-item">
+                    <div ><a href="salesreport.html" ><i class='bx bx-cart'></i><span>Sales</a></div>
+                </div>
+                <div class="list-item">
+                    <div ><a href="Inventoryreport.html" ><i class='bx bx-basket' ></i><span>Inventory</span></div>
+                    
+                </div>
+
+                <div class="list-item">
+                    <div ><a href="Purchasereport.html" ><i class='bx bx-box'></i><span>Purchases</span></div>
+                </div>
+                <div class="list-item">
+                    <div ><a href="Paymentreceived.html" ><i class='bx bx-credit-card' ></i><span>Payment Received</span></div>
+                </div>
+                <div class="list-item">
+                    <div ><a href="Paymentmade.html" ><i class='bx bx-credit-card' ></i><span>Payment Made</span></div>
+                </div>
+             </main>
+
+    </body>    
+    
+</html>

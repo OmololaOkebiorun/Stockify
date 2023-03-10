@@ -1,0 +1,386 @@
+:root{
+    --bgcolor:#fefefe;
+    --whiteshade01: #EAF3D8;
+    --whiteshade02: #F1F7ED;
+    --textcolor: #101010;
+    --grey: #4b4b4b;
+    --border:.1rem var(--grey) solid;
+    --prycolor:#95C13D;
+    --seccolor: #638129;
+    --lightgrey:#8e8e8e;
+    --barcolor:#4A601E;
+
+}
+
+*{
+    font-family: 'Syne' 'Mulish';
+    font-weight: 400;
+    margin-bottom:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--black);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--grey);
+    border-radius: 5rem;
+}
+
+
+.btn{
+    margin-top: .1rem;
+    display:inline-block;
+    padding:1.2rem 2.4em;
+    font-size: 1.6rem;
+    color:var(--bgcolor);
+    background: var(--barcolor);
+    cursor: pointer;
+    font-family: 'Mulish';
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.secbtn{
+    margin-top: .1rem;
+    display:inline-block;
+    padding:1.2rem 2.4em;
+    font-size: 1.6rem;
+    color:var(--textcolor);
+    background-color: aqua;
+    border-color: var(--barcolor);
+    cursor: pointer;
+    font-family: 'Mulish';
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 6px;
+}
+.secbtn:hover{
+    color: var(--bgcolor);
+    background-color: var(--seccolor);
+}
+.btn:hover{
+    background-color:var(--seccolor);
+}
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    text-transform: none;
+    padding-bottom: 6.4rem;
+    font-size: 4rem;
+    font-weight: 500;
+    color:var(--black);
+    font-family: "Syne";
+}
+
+body{
+    background: var(--bgcolor);
+    align-items: center;
+    justify-content: center;
+}
+section{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.material-icons-outlined{
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 32px;
+    color:var(--grey);
+    
+}
+
+
+.header{
+    background: var(--bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    border-color: var(--lightgrey);
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+}
+
+.header .logo img{
+   max-width: 164px;
+
+}
+.header .button div{
+    margin-left: 1.6rem;
+}
+
+.header .logo p{
+    font-size:2rem ;
+    font-family: Syne;
+    color: var(--textcolor);
+    font-weight: 400;
+}
+
+.header .navbar a{
+    color:var(--textcolor);
+    margin: 0.1rem;
+    font-family: Mulish;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    text-decoration: none;
+}
+.wrapper{
+    display:flex;
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 0%;
+    overflow: hidden;
+    padding:3rem 7%;
+}
+
+.wrapper img{
+    height: 440px;
+    border-radius: 32px 0 32px 0;
+}
+.cols {
+    width: 70% 30%;
+    justify-content: space-between;
+}
+.home .content{
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+.home .content h3{
+    font-size: 5rem;
+    text-transform: none;
+    font-family: 'Syne';
+    color:var(--textcolor);
+    font-weight: 500;
+    text-align: left;
+    justify-content: center;
+}
+
+.home .content p{
+    text-align: left;
+    font-size: 2.4rem;
+    text-transform: none;
+    font-family: 'Mulish';
+    color:var(--grey);
+    font-weight: 400;
+    line-height: 160.2%;
+    justify-content: left;
+    padding-bottom: 4rem;
+}
+
+
+/*--New Features--*/
+.feature .heading{
+        padding-top: 2rem;
+}
+.feature .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, auto));
+    gap:1.5rem;
+    padding:3rem 7%;
+}
+
+.feature .box-container .box{
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:1rem 1.6rem;
+    border-radius: 11px;
+    margin-bottom: 2rem;
+}
+
+.feature .box-container .box p{
+    font-size: 1.6rem;
+    line-height: 160.2%;
+    color: var(--grey);
+    padding: 0rem 0;
+    
+}
+
+.feature .box-container .box .material-icons-outlined{
+    height:7rem;
+    width:7rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.feature .box-container .box h3{
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.4rem;
+    color:var(--textcolor);
+    font-family: Syne;
+    margin-bottom: .8rem;
+
+}
+
+.feature .box-container .box .stars i{
+    font-size: 1.2rem;
+    color:var(--gold);
+    
+}
+/*--New Features--*/
+
+.Market{
+    align-items: center;
+    justify-content: center;
+    padding:3rem 7%;
+}
+
+.Market .row{
+    display:flex;
+    align-items: center;
+    background:var(--whiteshade02);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Market .row .image{
+    flex: 1 1 45rem;
+}
+
+.Market .row .image img{
+    max-width: 100%;
+}
+.image{
+    flex-basis: 40%;
+}
+.Market .row .content{
+    flex: 1 1 45rem;
+    padding: 6rem;
+}
+
+.Market .row .content h3{
+   font-size: 3.1rem;
+   color: var(--textcolor);
+   font-family: 'Mulish';
+}
+
+.Market .row .content p{
+    font-size: 1.6rem;
+    color: var(--grey);
+    padding: 1rem 0;
+    line-height: 160.2%;
+    text-transform: none;
+    font-family: 'Mulish';
+    
+ }
+
+ .Reviews .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, auto));
+    gap:1.5rem;
+    padding:3rem 7%;
+}
+
+.Reviews .box-container .box{
+    border:var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+    border-radius: 11px;
+    border-color: var(--lightgrey);
+    margin-bottom: 6.4rem;
+}
+
+.Reviews .box-container .box p{
+    font-size: 1.4rem;
+    line-height: 160.2%;
+    color: var(--grey);
+    padding: 1.6rem 0;
+    
+}
+
+.Reviews .box-container .box .user{
+    height:7rem;
+    width:7rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.Reviews .box-container .box h3{
+    padding: 1rem;
+    font-size: 1.6rem;
+    color:var(--textcolor);
+    font-family: Syne;
+    margin-bottom: .8rem;
+
+}
+
+.Reviews .box-container .box .stars i{
+    font-size: 1.2rem;
+    color:var(--gold);
+    
+}
+.quote{
+    background-color: var(--whiteshade01);
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    padding: 1.6rem;
+    margin:0;
+   
+
+   
+}
+.quote a{
+    justify-content: center;
+}
+.quote h4{
+    font-family: Syne;
+    font-size: 3.1rem;
+    line-height: 160.2%;
+    text-align: center;
+    
+}
+.copyright{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--seccolor);
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+   
+}
+
+/* Inventory Forms/*/

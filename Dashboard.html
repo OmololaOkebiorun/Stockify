@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--font-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Syne&display=swap" rel="stylesheet">
+        <!--icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <!--Main style-->
+        <title> Dashboard</title>
+        <link rel="stylesheet" href="Dashboard.css">
+    </head>
+
+    <body>
+        <div class="grid-container">
+             <!--Header Starts-->
+             <header class="header">
+              <div class="menu-icon" onclick="opensidebar">
+                <span class="material-icons-outlined" ><i class='bx bx-menu'></i> Menu</span>
+              </div>
+              <div class="header-left">
+                <input type="search"  >
+                <span class="material-icons-outlined"  ><i class='bx bx-search-alt-2' ></i>  </span>
+              </div>
+              <div class="header-right">
+                <span class="material-icons-outlined"  ><i class='bx bx-bell'></i> </span>
+                <span class="material-icons-outlined"  ><i class='bx bx-cog'></i> </span>
+                <span class="material-icons-outlined"  ><i class='bx bx-user-circle'></i> </span>
+
+              </div>
+             </header>
+             <!--Header Endss-->
+
+             <!--Side Bar Starts-->
+             <aside id="sidebar">
+              <div class="sidebar-title">
+                <div class="sidebar-brand">
+                  <img src="LOGO.png">
+                </div>
+                <span class="material-icons-outlined" onclick="closesidebar" ><i class='bx bx-x'></i> close </span>
+              </div>
+              <ol class="sidebar-list">
+                <li class="sidebar-list-item">
+                  <a href="Dashboard.html" ><span class="material-icons-outlined"><i class='bx bx-pie-chart-alt'></i></span>Dashboard</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Supplier.html" ><span class="material-icons-outlined"><i class='bx bx-box'></i></span>Suppliers</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Customer.html" ><span class="material-icons-outlined"><i class='bx bx-user'></i></span>Customers</a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="Inventory.html" ><span class="material-icons-outlined"><i class='bx bx-basket'></i></span>Inventory</a>
+                </li>
+              
+                <li class="sidebar-list-item">
+                  <a href="Report.html" ><span class="material-icons-outlined"><i class='bx bx-bar-chart-alt-2' ></i>  </span>Report</a>
+                </li>
+              </ol>
+             </aside>
+             <!--Side Bar Ends-->
+
+             <!--Main Starts-->
+             <main class="main-container">
+              <div class="main-title">
+                <h2>Dashboard</h2>
+              </div>
+
+              <div class="main-cards">
+                <div class="card">
+                  <div class="card-inner">
+                    <h4> Net Balance</h4>
+                  </div>
+                  <h2> ₦0.00</h2>
+                 
+                </div>
+
+                <div class="card">
+                  <div class="card-inner">
+                    <h4> Total Purchases</h4>
+                  </div>
+                  <h2> ₦0.00</h2>
+                </div>
+
+                <div class="card">
+                  <div class="card-inner">
+                    <h4> Total Sales</h4>
+                  </div>
+                  <h2> ₦0.00</h2>
+                </div>
+
+                <div class="card">
+                  <div class="card-inner">
+                    <h4> Shipping Payments</h4>
+                  </div>
+                  <h2> ₦0.00</h2>
+                </div>
+                
+
+                
+                
+              </div>
+
+              <div class="charts">
+
+                <div class="charts-card">
+                  <h4 class="chart-title" >Sales Vs Purchases</h4>
+                  <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                  <h4 class="chart-title" >Top Purchases</h4>
+                  <div id="pie-chart"></div>
+                </div>
+              </div>
+             </main>
+             <!--Main Ends-->
+
+             
+
+
+
+        </div>
+       <!--Apex Charts-->
+       <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+    <script src="script.js"></script>
+    </body>
